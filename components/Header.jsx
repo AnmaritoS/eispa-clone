@@ -33,12 +33,26 @@ const Header = () => {
             </Link>
           </div>
           <ul className="hidden space-x-4 md:flex">
-            <li className="headerLink cursor-default font-semibold text-black hover:text-black">
-              Home
-            </li>
-            <li className="headerLink">About</li>
-            <li className="headerLink">Contact Us</li>
-            <li className="headerLink">Tracking</li>
+            <Link href="/">
+              <li className="headerLink cursor-default font-semibold text-black hover:text-black/70">
+                Home
+              </li>
+            </Link>
+            <Link href="/about">
+              <li className="headerLink cursor-default font-semibold text-black hover:text-black/70">
+                About
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li className="headerLink cursor-default font-semibold text-black hover:text-black/70">
+                Contact Us
+              </li>
+            </Link>
+            <Link href="/tracking">
+              <li className="headerLink cursor-default font-semibold text-black hover:text-black/70">
+                Tracking
+              </li>
+            </Link>
           </ul>
           <div className="flex flex-col sm:flex-row"></div>
         </div>
