@@ -29,7 +29,13 @@ const Header = () => {
         <div className="flex flex-col md:flex-row p-5 items-center space-x-2 md:space-x-10">
           <div className="w-auto mx-5">
             <Link href="/" className="content-center">
-              <img className="h-6 my-3" src="/logo.svg" alt="logo" />
+              <div
+                className={`${
+                  isScrolled && " shadow-md shadow-[gray] rounded-xl"
+                } p-1.5 `}
+              >
+                <img className="h-6 my-3 " src="/logo.svg" alt="logo" />
+              </div>
             </Link>
           </div>
           <ul className="hidden space-x-4 md:flex">

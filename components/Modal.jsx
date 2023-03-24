@@ -9,7 +9,12 @@ const Modal = () => {
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
+      <Dialog
+        as="div"
+        className="relative z-10"
+        initialFocus={cancelButtonRef}
+        onClose={setOpen}
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -40,13 +45,17 @@ const Modal = () => {
                       <ExclamationTriangleIcon className="h-6 w-6 text-red-600" aria-hidden="true" />
                     </div> */}
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+                      <Dialog.Title
+                        as="h3"
+                        className="text-lg font-medium leading-6 text-gray-900"
+                      >
                         UNDER CONSTRUCTION
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-                          This is only a preview of the current phase in the development process. This website is still under construction and may
-                          contain some bugs.
+                          This is only a preview of the current phase in the
+                          development process. This website is still under
+                          construction and may contain some bugs.
                         </p>
                       </div>
                     </div>

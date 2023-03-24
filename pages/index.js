@@ -1,8 +1,6 @@
-import { engines } from "./api/data";
-
 import Head from "next/head";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Search from "../components/Search";
@@ -15,8 +13,12 @@ import Modal from "../components/Modal";
 
 const HomePage = () => {
   const [result, setResult] = useState([]);
-  const [display, setDisplay] = useState(64);
+  const [display, setDisplay] = useState(4);
   const getResult = (result) => setResult(result);
+
+  useEffect(() => {
+    result == 0 && setDisplay(4);
+  }, [result]);
 
   return (
     <>
@@ -26,11 +28,10 @@ const HomePage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      {result.length == 0 ? <Hero /> : <></>}
+      {result.length == 0 && <Hero />}
       <div className="-translate-y-1/2">
         <Search
           paddingTop={result.length == 0 ? "pt-0" : "pt-80"}
-          engines={engines}
           onChange={getResult}
         />
       </div>
@@ -48,7 +49,7 @@ const HomePage = () => {
                   <Link
                     href={e.id.toString()}
                     key={e.id}
-                    className="lg:w-1/4 sm:w-1/2 p-4"
+                    className="p-4 xl:w-1/4 md:w-1/2 w-full"
                   >
                     <Card engine={e} />
                   </Link>
@@ -57,11 +58,11 @@ const HomePage = () => {
             )}
           </div>
         </div>
-        {display < result.length && (
+        {result.length > display && (
           <div className="flex justify-center my-2">
             <button
               className="bg-yellow-500 text-white py-2 px-4 rounded-lg"
-              onClick={() => setDisplay(display + 64)}
+              onClick={() => setDisplay(display + 32)}
             >
               Plus de résultats
             </button>

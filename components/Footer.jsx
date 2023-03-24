@@ -13,7 +13,6 @@ const Footer = () => {
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a
-              target="_blank"
               className="text-gray-500"
               href="https://www.facebook.com/profile.php?id=100089457404347"
             >
@@ -35,7 +34,6 @@ const Footer = () => {
             </a> */}
             <a
               className="ml-3 text-gray-500"
-              target="_blank"
               href="https://www.instagram.com/eispa.eu/"
             >
               <svg

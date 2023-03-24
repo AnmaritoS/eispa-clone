@@ -3,7 +3,9 @@ const Feature = () => {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Pourquoi faire confiance à notre entreprise ?</h1>
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+            Pourquoi faire confiance à notre entreprise ?
+          </h1>
           {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
             Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.
           </p> */}
@@ -23,14 +25,19 @@ const Feature = () => {
                 className="w-10 h-10"
                 viewBox="0 0 24 24"
               >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
               </svg>
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Livraison et Suivi Pratique</h2>
+              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                Livraison et Suivi Pratique
+              </h2>
               <p className="leading-relaxed text-base">
-                Notre service de suivi de livraison vous offre tranquillité d'esprit et vous permet de suivre votre commande en temps réel, de la
-                commande à la livraison.
+                Notre service de suivi de livraison vous offre tranquillité
+                d'esprit et vous permet de suivre votre commande en temps réel,
+                de la commande à la livraison.
               </p>
               {/* <a className="mt-3 text-yellow-500 inline-flex items-center">
                 Learn More
@@ -59,16 +66,18 @@ const Feature = () => {
                 className="w-10 h-10"
                 viewBox="0 0 24 24"
               >
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Inspection et Test des Moteurs</h2>
+              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                Inspection et Test des Moteurs
+              </h2>
               <p className="leading-relaxed text-base">
-                Nous effectuons des tests de compression, vérifions les défauts visuels et les fuites pour garantir le bon fonctionnement des moteurs,
-                ainsi que la vérification des turbos et des systèmes d'injection pour les moteurs complets.
+                Nous effectuons des tests de compression, vérifions les défauts
+                visuels et les fuites pour garantir le bon fonctionnement des
+                moteurs, ainsi que la vérification des turbos et des systèmes
+                d'injection pour les moteurs complets.
               </p>
               {/* <a className="mt-3 text-yellow-500 inline-flex items-center">
                 Learn More
@@ -102,10 +111,13 @@ const Feature = () => {
               </svg>
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Garantie Complète</h2>
+              <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                Garantie Complète
+              </h2>
               <p className="leading-relaxed text-base">
-                Nous offrons une garantie de 6 mois pour tous les produits achetés pour assurer votre sécurité et une couverture complète en cas de
-                problème.
+                Nous offrons une garantie de 6 mois pour tous les produits
+                achetés pour assurer votre sécurité et une couverture complète
+                en cas de problème.
               </p>
               {/* <a className="mt-3 text-yellow-500 inline-flex items-center">
                 Learn More
