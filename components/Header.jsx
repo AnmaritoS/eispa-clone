@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,12 +23,15 @@ const Header = () => {
   return (
     <>
       <header
-        className={`text-gray-600 body-font w-full fixed z-50 ${
+        className={`text-gray-600 body-font ml-4 md:ml-0 w-full fixed z-50 ${
           isScrolled && "bg-[#FFCC00]"
         }`}
       >
-        <div className="flex flex-col md:flex-row p-5 items-center space-x-2 md:space-x-10">
-          <div className="w-auto mx-5">
+        <div className="flex md:flex-row p-5 items-center space-x-2 md:space-x-10">
+          <div className="burgerIcon">
+            <BurgerMenu />
+          </div>
+          <div className="w-auto md:mx-5">
             <Link href="/" className="content-center">
               <div
                 className={`${
@@ -60,6 +64,7 @@ const Header = () => {
               </li>
             </Link>
           </ul>
+
           <div className="flex flex-col sm:flex-row"></div>
         </div>
       </header>
