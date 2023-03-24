@@ -31,7 +31,7 @@ const HomePage = () => {
       {result.length == 0 && <Hero />}
       <div className="-translate-y-1/2">
         <Search
-          paddingTop={result.length == 0 ? "pt-0" : "pt-80"}
+          paddingTop={result.length !== 0 && "pt-80"}
           onChange={getResult}
         />
       </div>
