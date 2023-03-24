@@ -30,18 +30,23 @@ const HomePage = () => {
       <Header />
       {result.length == 0 && <Hero />}
       <div className="-translate-y-1/2">
+        ~
         <Search
           paddingTop={result.length !== 0 && "pt-80"}
           onChange={getResult}
         />
       </div>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
+        <div
+          className={`container px-5 ${
+            result.length == 0 ? "py-24" : "pb-24"
+          } mx-auto`}
+        >
+          <div className="flex flex-wrap -m-4 -mt-24">
             {result.length == 0 ? (
               <>
                 <Feature />
-                {/* <Testimonials /> */}
+                <Testimonials />
               </>
             ) : (
               <>
